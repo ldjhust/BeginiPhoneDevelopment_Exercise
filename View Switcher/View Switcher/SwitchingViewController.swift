@@ -48,13 +48,20 @@ class SwitchingViewController: UIViewController {
             }
         }
         
+        // 开始一个动画块
+        UIView.beginAnimations(nil, context: nil)
+        UIView.setAnimationDuration(0.4)
+        UIView.setAnimationCurve(.EaseInOut)
         if yellowViewControleler != nil && yellowViewControleler.view.superview == nil {
+            UIView.setAnimationTransition(.FlipFromRight, forView: view, cache: true)
             yellowViewControleler.view.frame = view.frame
             switchViewController(from: blueViewController, to: yellowViewControleler)
         } else {
+            UIView.setAnimationTransition(.FlipFromLeft, forView: view, cache: true)
             blueViewController.view.frame = view.frame
             switchViewController(from: yellowViewControleler, to: blueViewController)
         }
+        UIView.commitAnimations() // 确认提交动画
     }
     
     // MARK: - private methods
