@@ -19,6 +19,7 @@
 		6D1539111C1858D000E5E3F8 /* DoubleComponentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1539101C1858D000E5E3F8 /* DoubleComponentPickerViewController.m */; };
 		6D1539141C1858F600E5E3F8 /* DependentComponentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1539131C1858F600E5E3F8 /* DependentComponentPickerViewController.m */; };
 		6D1539171C18591300E5E3F8 /* CustomPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1539161C18591300E5E3F8 /* CustomPickerViewController.m */; };
+		6D15391B1C193EFB00E5E3F8 /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D15391A1C193EFB00E5E3F8 /* statedictionary.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		6D1539131C1858F600E5E3F8 /* DependentComponentPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DependentComponentPickerViewController.m; sourceTree = "<group>"; };
 		6D1539151C18591300E5E3F8 /* CustomPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPickerViewController.h; sourceTree = "<group>"; };
 		6D1539161C18591300E5E3F8 /* CustomPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPickerViewController.m; sourceTree = "<group>"; };
+		6D15391A1C193EFB00E5E3F8 /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statedictionary.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				6D1538F01C18580900E5E3F8 /* Assets.xcassets */,
 				6D1538F21C18580900E5E3F8 /* LaunchScreen.storyboard */,
 				6D1538F51C18580900E5E3F8 /* Info.plist */,
+				6D15391A1C193EFB00E5E3F8 /* statedictionary.plist */,
 				6D1538E41C18580900E5E3F8 /* Supporting Files */,
 			);
 			path = Pickers;
@@ -218,6 +221,7 @@
 			files = (
 				6D1538F41C18580900E5E3F8 /* LaunchScreen.storyboard in Resources */,
 				6D1538F11C18580900E5E3F8 /* Assets.xcassets in Resources */,
+				6D15391B1C193EFB00E5E3F8 /* statedictionary.plist in Resources */,
 				6D1538EF1C18580900E5E3F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +436,7 @@
 				6D1539051C18580900E5E3F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D1539061C18580900E5E3F8 /* Build configuration list for PBXNativeTarget "PickersTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +445,7 @@
 				6D1539081C18580900E5E3F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

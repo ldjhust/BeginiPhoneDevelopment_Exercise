@@ -113,17 +113,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8b-r7-CgD">
-                                <rect key="frame" x="0.0" y="0.0" width="285" height="216"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="snq-Vm-GfQ" id="796-Mb-BKF"/>
                                     <outlet property="delegate" destination="snq-Vm-GfQ" id="RcU-MU-YYy"/>
-                                </connections>
-                            </pickerView>
-                            <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lft-zm-HW8">
-                                <rect key="frame" x="316" y="0.0" width="284" height="216"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="snq-Vm-GfQ" id="5dW-yk-lTR"/>
-                                    <outlet property="delegate" destination="snq-Vm-GfQ" id="GT4-fI-vUy"/>
                                 </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9B-sD-Sfg">
@@ -136,20 +129,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Lft-zm-HW8" firstAttribute="width" secondItem="k8b-r7-CgD" secondAttribute="width" id="A7m-98-pOK"/>
                             <constraint firstItem="a9B-sD-Sfg" firstAttribute="centerX" secondItem="PRO-XW-45n" secondAttribute="centerX" id="Bf8-lD-jYm"/>
-                            <constraint firstItem="Lft-zm-HW8" firstAttribute="top" secondItem="PRO-XW-45n" secondAttribute="top" id="Iah-yV-2EJ"/>
                             <constraint firstItem="k8b-r7-CgD" firstAttribute="leading" secondItem="PRO-XW-45n" secondAttribute="leading" id="K41-3i-Vsc"/>
                             <constraint firstItem="a9B-sD-Sfg" firstAttribute="centerY" secondItem="PRO-XW-45n" secondAttribute="centerY" id="KvJ-F9-Ak6"/>
-                            <constraint firstItem="Lft-zm-HW8" firstAttribute="leading" secondItem="k8b-r7-CgD" secondAttribute="trailing" constant="31" id="tXt-hJ-gIT"/>
-                            <constraint firstAttribute="trailing" secondItem="Lft-zm-HW8" secondAttribute="trailing" id="xoD-Di-aji"/>
+                            <constraint firstAttribute="trailing" secondItem="k8b-r7-CgD" secondAttribute="trailing" id="v63-zj-Fu8"/>
                             <constraint firstItem="k8b-r7-CgD" firstAttribute="top" secondItem="PRO-XW-45n" secondAttribute="top" id="zDk-dQ-J3U"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Double" image="doubleicon" id="Ii0-Vr-UgT"/>
                     <connections>
                         <outlet property="leftPicker" destination="k8b-r7-CgD" id="Xid-OR-n9I"/>
-                        <outlet property="rightPicker" destination="Lft-zm-HW8" id="esG-0t-JYT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kaF-ka-kNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -167,9 +156,35 @@
                     <view key="view" contentMode="scaleToFill" id="oA6-yN-uXT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOl-yz-3jO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="f76-mq-f20" id="nog-zZ-QYg"/>
+                                    <outlet property="delegate" destination="f76-mq-f20" id="ZQY-4P-bin"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQL-Fd-7xr">
+                                <rect key="frame" x="278" y="285" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="f76-mq-f20" eventType="touchUpInside" id="1sc-WT-01k"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gOl-yz-3jO" secondAttribute="trailing" id="0mq-nb-LIe"/>
+                            <constraint firstItem="lQL-Fd-7xr" firstAttribute="centerX" secondItem="oA6-yN-uXT" secondAttribute="centerX" id="AnF-O0-rJ8"/>
+                            <constraint firstItem="gOl-yz-3jO" firstAttribute="top" secondItem="oA6-yN-uXT" secondAttribute="top" id="UP3-PT-viC"/>
+                            <constraint firstItem="gOl-yz-3jO" firstAttribute="leading" secondItem="oA6-yN-uXT" secondAttribute="leading" id="Vba-Mc-ycu"/>
+                            <constraint firstItem="lQL-Fd-7xr" firstAttribute="centerY" secondItem="oA6-yN-uXT" secondAttribute="centerY" id="ukh-t4-k7C"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dependent" image="dependenticon" id="VEt-Bz-ngT"/>
+                    <connections>
+                        <outlet property="dependentPicker" destination="gOl-yz-3jO" id="69s-pV-5vi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jmR-6b-O8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
