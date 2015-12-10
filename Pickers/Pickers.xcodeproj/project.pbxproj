@@ -20,6 +20,8 @@
 		6D1539141C1858F600E5E3F8 /* DependentComponentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1539131C1858F600E5E3F8 /* DependentComponentPickerViewController.m */; };
 		6D1539171C18591300E5E3F8 /* CustomPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1539161C18591300E5E3F8 /* CustomPickerViewController.m */; };
 		6D15391B1C193EFB00E5E3F8 /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D15391A1C193EFB00E5E3F8 /* statedictionary.plist */; };
+		6D15391E1C194E6E00E5E3F8 /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D15391C1C194E6E00E5E3F8 /* crunch.wav */; };
+		6D15391F1C194E6E00E5E3F8 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D15391D1C194E6E00E5E3F8 /* win.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		6D1539151C18591300E5E3F8 /* CustomPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPickerViewController.h; sourceTree = "<group>"; };
 		6D1539161C18591300E5E3F8 /* CustomPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPickerViewController.m; sourceTree = "<group>"; };
 		6D15391A1C193EFB00E5E3F8 /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statedictionary.plist; sourceTree = "<group>"; };
+		6D15391C1C194E6E00E5E3F8 /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crunch.wav; sourceTree = "<group>"; };
+		6D15391D1C194E6E00E5E3F8 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 				6D1538F21C18580900E5E3F8 /* LaunchScreen.storyboard */,
 				6D1538F51C18580900E5E3F8 /* Info.plist */,
 				6D15391A1C193EFB00E5E3F8 /* statedictionary.plist */,
+				6D15391C1C194E6E00E5E3F8 /* crunch.wav */,
+				6D15391D1C194E6E00E5E3F8 /* win.wav */,
 				6D1538E41C18580900E5E3F8 /* Supporting Files */,
 			);
 			path = Pickers;
@@ -219,8 +225,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D15391E1C194E6E00E5E3F8 /* crunch.wav in Resources */,
 				6D1538F41C18580900E5E3F8 /* LaunchScreen.storyboard in Resources */,
 				6D1538F11C18580900E5E3F8 /* Assets.xcassets in Resources */,
+				6D15391F1C194E6E00E5E3F8 /* win.wav in Resources */,
 				6D15391B1C193EFB00E5E3F8 /* statedictionary.plist in Resources */,
 				6D1538EF1C18580900E5E3F8 /* Main.storyboard in Resources */,
 			);

@@ -201,9 +201,45 @@
                     <view key="view" contentMode="scaleToFill" id="SK7-dP-lW3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jk9-bK-22j">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Yze-gy-FNU" id="nKx-tV-IGB"/>
+                                    <outlet property="delegate" destination="Yze-gy-FNU" id="NpW-yo-icB"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aps-VA-icf">
+                                <rect key="frame" x="243" y="224" width="115" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgV-oM-MBV">
+                                <rect key="frame" x="285" y="290" width="31" height="30"/>
+                                <state key="normal" title="Spin"/>
+                                <connections>
+                                    <action selector="spin:" destination="Yze-gy-FNU" eventType="touchUpInside" id="VJ3-DC-DTh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Aps-VA-icf" firstAttribute="centerX" secondItem="SK7-dP-lW3" secondAttribute="centerX" id="Sfz-Sb-iRf"/>
+                            <constraint firstItem="GgV-oM-MBV" firstAttribute="top" secondItem="Aps-VA-icf" secondAttribute="bottom" constant="8" id="b7d-0N-aj8"/>
+                            <constraint firstItem="jk9-bK-22j" firstAttribute="top" secondItem="SK7-dP-lW3" secondAttribute="top" id="ebq-qU-R9N"/>
+                            <constraint firstAttribute="trailing" secondItem="jk9-bK-22j" secondAttribute="trailing" id="fUn-S4-BV2"/>
+                            <constraint firstItem="GgV-oM-MBV" firstAttribute="centerX" secondItem="SK7-dP-lW3" secondAttribute="centerX" id="n2Q-Cq-zro"/>
+                            <constraint firstItem="Aps-VA-icf" firstAttribute="top" secondItem="jk9-bK-22j" secondAttribute="bottom" constant="8" id="ptG-jD-Ocw"/>
+                            <constraint firstItem="jk9-bK-22j" firstAttribute="leading" secondItem="SK7-dP-lW3" secondAttribute="leading" id="xoo-tN-ZJx"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Custom" image="toolicon" id="PSe-ub-uK7"/>
+                    <connections>
+                        <outlet property="button" destination="GgV-oM-MBV" id="dTO-a5-5Xo"/>
+                        <outlet property="gamePicker" destination="jk9-bK-22j" id="o67-dj-lxP"/>
+                        <outlet property="winLabel" destination="Aps-VA-icf" id="BfC-Ya-1Zu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oU8-pG-AgD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
