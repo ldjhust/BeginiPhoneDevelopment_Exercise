@@ -25,7 +25,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.registerClass(NameAndColorCell.self, forCellReuseIdentifier: cellTableIdentifier)
+        let nib = UINib(nibName: "NameAndColorCell", bundle: nil)
+        tableView.registerNib(nib, forCellReuseIdentifier: cellTableIdentifier)
     }
 }
 

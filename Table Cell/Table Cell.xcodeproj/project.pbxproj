@@ -14,6 +14,7 @@
 		6D1539631C199CFB00E5E3F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D1539611C199CFB00E5E3F8 /* LaunchScreen.storyboard */; };
 		6D15396E1C199CFC00E5E3F8 /* Table_CellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D15396D1C199CFC00E5E3F8 /* Table_CellTests.swift */; };
 		6D15397B1C19A63800E5E3F8 /* NameAndColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D15397A1C19A63800E5E3F8 /* NameAndColorCell.swift */; };
+		6D15397D1C19B18B00E5E3F8 /* NameAndColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D15397C1C19B18B00E5E3F8 /* NameAndColorCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		6D15396D1C199CFC00E5E3F8 /* Table_CellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table_CellTests.swift; sourceTree = "<group>"; };
 		6D15396F1C199CFC00E5E3F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D15397A1C19A63800E5E3F8 /* NameAndColorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameAndColorCell.swift; sourceTree = "<group>"; };
+		6D15397C1C19B18B00E5E3F8 /* NameAndColorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NameAndColorCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				6D15395A1C199CFB00E5E3F8 /* ViewController.swift */,
 				6D15397A1C19A63800E5E3F8 /* NameAndColorCell.swift */,
 				6D15395C1C199CFB00E5E3F8 /* Main.storyboard */,
+				6D15397C1C19B18B00E5E3F8 /* NameAndColorCell.xib */,
 				6D15395F1C199CFB00E5E3F8 /* Assets.xcassets */,
 				6D1539611C199CFB00E5E3F8 /* LaunchScreen.storyboard */,
 				6D1539641C199CFB00E5E3F8 /* Info.plist */,
@@ -180,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D15397D1C19B18B00E5E3F8 /* NameAndColorCell.xib in Resources */,
 				6D1539631C199CFB00E5E3F8 /* LaunchScreen.storyboard in Resources */,
 				6D1539601C199CFB00E5E3F8 /* Assets.xcassets in Resources */,
 				6D15395E1C199CFB00E5E3F8 /* Main.storyboard in Resources */,
