@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: sectionsTableIdentifier)
+        tableView.sectionIndexBackgroundColor = UIColor.blackColor()
+        tableView.sectionIndexTrackingBackgroundColor = UIColor.darkGrayColor()
+        tableView.sectionIndexColor = UIColor.whiteColor()
+        
         let filepath = NSBundle.mainBundle().pathForResource("sortednames", ofType: "plist")
         let nameDic = NSDictionary(contentsOfFile: filepath!)
         names = nameDic as! [String: [String]]
