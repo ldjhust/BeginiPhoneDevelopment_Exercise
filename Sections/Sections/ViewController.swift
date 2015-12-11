@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     let sectionsTableIdentifier = "SectionsTableIdentifier"
     var names: [String: [String]]!
     var keys: [String]!
+    var searchController: UISearchController!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -25,6 +26,18 @@ class ViewController: UIViewController {
         let nameDic = NSDictionary(contentsOfFile: filepath!)
         names = nameDic as! [String: [String]]
         keys = (nameDic?.allKeys as! [String]).sort()
+        
+        let resultsController = SearchResultsController()
+        resultsController.names = names
+        resultsController.keys = keys
+        
+        searchController = UISearchController(searchResultsController: resultsController)
+        let searchBar = searchController.searchBar
+        searchBar.scopeButtonTitles = ["All", "Short", "Long"]
+        searchBar.placeholder = "Enter a search term"
+        searchBar.sizeToFit()
+        tableView.tableHeaderView = searchBar
+        searchController.searchResultsUpdater = resultsController
     }
 }
 
@@ -54,3 +67,29 @@ extension ViewController: UITableViewDataSource {
     }
 }
 
+extension ViewController: UITableViewDelegate {
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+        return .Delete
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        print ("o")
+    }
+    
+    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        let a1 = UITableViewRowAction(style: .Destructive, title: "shanchu") { (rowAcion, indexPath) -> Void in
+            print ("haha, shide zaiwozhe")
+        }
+        let a2 = UITableViewRowAction(style: .Default, title: "置顶") { (action, indexPath) -> Void in
+            print ("\(indexPath.row) 置顶")
+        }
+        
+        a2.backgroundColor = UIColor.blueColor()
+        
+        return [a1, a2]
+    }
+}
